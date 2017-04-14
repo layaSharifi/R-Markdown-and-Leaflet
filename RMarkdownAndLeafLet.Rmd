@@ -1,0 +1,24 @@
+---
+title: "Interactive Map Assignment"
+author: "Laya Sharifi"
+date: "April 7, 2017"
+output: html_document
+---
+
+##Interactive Data Mapping : Developing Data Products
+
+
+__Create a web page using R Markdown that features a map created with Leaflet.Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!__
+
+###Submission Date: April 7, 2017
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=44.92108939396036, lng= -93.46838379220571, popup="WhiteWater office ")
+my_map
+
+```
+
+
+
